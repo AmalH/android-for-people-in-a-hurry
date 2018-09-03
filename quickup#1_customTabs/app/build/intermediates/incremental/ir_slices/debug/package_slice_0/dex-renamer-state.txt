@@ -1,4 +1,0 @@
-#Sat Aug 04 10:19:54 WAT 2018
-base.0=C\:\\MY_WORKSPACE\\AndroidProjects\\AndroidQuickUps\\quickup\#1_customTabs\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

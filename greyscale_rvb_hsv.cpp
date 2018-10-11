@@ -23,26 +23,24 @@ int main( int argc, char** argv )
         return -1;
     }
 
-    /*  Convertir l’image RVB 
-    en image en niveaux de gris à l’aide de la fonction cvtColor */
+    /*  convert image to grey sclae with cvtColor */
     Mat gray;
     cvtColor(image, gray, CV_BGR2GRAY);
 
-    //  Obtenir une image en niveaux de gris appelée gray_image. 
+    //  display the grey sale image. 
      namedWindow( "gray_image", WINDOW_AUTOSIZE );
      imshow( "gray_image", gray );  
 
-    //  Sauvegarder l’image obtenue en utilisant imwrite.
+    // save it with imwrite.
     imwrite("gray_image.jpg", gray); 
 
-    /*  Visualiser les deux images */
+    /*  display both images */
     imshow( "1", image );  
     imshow( "2", gray );  
 
-    /* Réexécuter le programme en convertissant l’image RVB en image HSV
-    Mat hsv; */
+    /* convert RVB to HSV */
     cvtColor(image, hsv, CV_BGR2HSV);
-     imshow( "1 - hsv now", image );  
+    imshow( "1 - hsv now", image );  
     imshow( "2", gray ); 
 
     pyrUp( image, image, Size( image.cols*2, image.rows*2 ) );
